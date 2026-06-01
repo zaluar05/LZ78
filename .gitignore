@@ -1,0 +1,6 @@
+*.o
+lz78
+fazarquivo
+dados/*.lz78
+dados/*-recuperado.txt
+dados/source.txt
