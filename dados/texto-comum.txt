@@ -1,0 +1,49 @@
+A compactacao de dados tem como objetivo reduzir a quantidade de bytes necessaria para representar uma informacao. Em algoritmos sem perdas, o arquivo original deve ser reconstruido exatamente apos a descompactacao. Essa propriedade e importante em documentos de texto, programas executaveis, bancos de dados e arquivos utilizados em transmissao de informacoes.
+
+O algoritmo LZ78 utiliza um dicionario construido durante a leitura do arquivo. Quando uma nova sequencia e encontrada, o compressor registra um par formado pelo indice de um prefixo conhecido e pelo proximo caractere. Dessa forma, repeticoes podem ser representadas de maneira mais economica conforme o dicionario cresce.
+
+O desempenho depende das caracteristicas da entrada. Textos com palavras e estruturas repetidas tendem a apresentar melhores resultados. Em arquivos pequenos, o cabecalho e a codificacao das tuplas podem ocupar espaco proporcionalmente maior. Em dados pouco previsiveis, a reducao de tamanho pode ser limitada ou ate negativa.
+
+A implementacao desenvolvida para o trabalho utiliza uma trie para armazenar as sequencias durante a compactacao. Cada no representa uma entrada do dicionario, e as arestas registram os caracteres que permitem avancar para sequencias maiores. Para reduzir o consumo de memoria, cada no mantem somente os filhos efetivamente existentes.
+
+Durante os testes, e importante comparar o arquivo original com o arquivo recuperado apos a descompactacao. A verificacao deve ser feita byte a byte para confirmar que nenhuma informacao foi alterada. Alem disso, os tamanhos dos arquivos original e compactado devem ser registrados para calcular a taxa de reducao.
+
+A compactacao de dados tem como objetivo reduzir a quantidade de bytes necessaria para representar uma informacao. Em algoritmos sem perdas, o arquivo original deve ser reconstruido exatamente apos a descompactacao. Essa propriedade e importante em documentos de texto, programas executaveis, bancos de dados e arquivos utilizados em transmissao de informacoes.
+
+O algoritmo LZ78 utiliza um dicionario construido durante a leitura do arquivo. Quando uma nova sequencia e encontrada, o compressor registra um par formado pelo indice de um prefixo conhecido e pelo proximo caractere. Dessa forma, repeticoes podem ser representadas de maneira mais economica conforme o dicionario cresce.
+
+O desempenho depende das caracteristicas da entrada. Textos com palavras e estruturas repetidas tendem a apresentar melhores resultados. Em arquivos pequenos, o cabecalho e a codificacao das tuplas podem ocupar espaco proporcionalmente maior. Em dados pouco previsiveis, a reducao de tamanho pode ser limitada ou ate negativa.
+
+A implementacao desenvolvida para o trabalho utiliza uma trie para armazenar as sequencias durante a compactacao. Cada no representa uma entrada do dicionario, e as arestas registram os caracteres que permitem avancar para sequencias maiores. Para reduzir o consumo de memoria, cada no mantem somente os filhos efetivamente existentes.
+
+Durante os testes, e importante comparar o arquivo original com o arquivo recuperado apos a descompactacao. A verificacao deve ser feita byte a byte para confirmar que nenhuma informacao foi alterada. Alem disso, os tamanhos dos arquivos original e compactado devem ser registrados para calcular a taxa de reducao.
+
+A compactacao de dados tem como objetivo reduzir a quantidade de bytes necessaria para representar uma informacao. Em algoritmos sem perdas, o arquivo original deve ser reconstruido exatamente apos a descompactacao. Essa propriedade e importante em documentos de texto, programas executaveis, bancos de dados e arquivos utilizados em transmissao de informacoes.
+
+O algoritmo LZ78 utiliza um dicionario construido durante a leitura do arquivo. Quando uma nova sequencia e encontrada, o compressor registra um par formado pelo indice de um prefixo conhecido e pelo proximo caractere. Dessa forma, repeticoes podem ser representadas de maneira mais economica conforme o dicionario cresce.
+
+O desempenho depende das caracteristicas da entrada. Textos com palavras e estruturas repetidas tendem a apresentar melhores resultados. Em arquivos pequenos, o cabecalho e a codificacao das tuplas podem ocupar espaco proporcionalmente maior. Em dados pouco previsiveis, a reducao de tamanho pode ser limitada ou ate negativa.
+
+A implementacao desenvolvida para o trabalho utiliza uma trie para armazenar as sequencias durante a compactacao. Cada no representa uma entrada do dicionario, e as arestas registram os caracteres que permitem avancar para sequencias maiores. Para reduzir o consumo de memoria, cada no mantem somente os filhos efetivamente existentes.
+
+Durante os testes, e importante comparar o arquivo original com o arquivo recuperado apos a descompactacao. A verificacao deve ser feita byte a byte para confirmar que nenhuma informacao foi alterada. Alem disso, os tamanhos dos arquivos original e compactado devem ser registrados para calcular a taxa de reducao.
+
+A compactacao de dados tem como objetivo reduzir a quantidade de bytes necessaria para representar uma informacao. Em algoritmos sem perdas, o arquivo original deve ser reconstruido exatamente apos a descompactacao. Essa propriedade e importante em documentos de texto, programas executaveis, bancos de dados e arquivos utilizados em transmissao de informacoes.
+
+O algoritmo LZ78 utiliza um dicionario construido durante a leitura do arquivo. Quando uma nova sequencia e encontrada, o compressor registra um par formado pelo indice de um prefixo conhecido e pelo proximo caractere. Dessa forma, repeticoes podem ser representadas de maneira mais economica conforme o dicionario cresce.
+
+O desempenho depende das caracteristicas da entrada. Textos com palavras e estruturas repetidas tendem a apresentar melhores resultados. Em arquivos pequenos, o cabecalho e a codificacao das tuplas podem ocupar espaco proporcionalmente maior. Em dados pouco previsiveis, a reducao de tamanho pode ser limitada ou ate negativa.
+
+A implementacao desenvolvida para o trabalho utiliza uma trie para armazenar as sequencias durante a compactacao. Cada no representa uma entrada do dicionario, e as arestas registram os caracteres que permitem avancar para sequencias maiores. Para reduzir o consumo de memoria, cada no mantem somente os filhos efetivamente existentes.
+
+Durante os testes, e importante comparar o arquivo original com o arquivo recuperado apos a descompactacao. A verificacao deve ser feita byte a byte para confirmar que nenhuma informacao foi alterada. Alem disso, os tamanhos dos arquivos original e compactado devem ser registrados para calcular a taxa de reducao.
+
+A compactacao de dados tem como objetivo reduzir a quantidade de bytes necessaria para representar uma informacao. Em algoritmos sem perdas, o arquivo original deve ser reconstruido exatamente apos a descompactacao. Essa propriedade e importante em documentos de texto, programas executaveis, bancos de dados e arquivos utilizados em transmissao de informacoes.
+
+O algoritmo LZ78 utiliza um dicionario construido durante a leitura do arquivo. Quando uma nova sequencia e encontrada, o compressor registra um par formado pelo indice de um prefixo conhecido e pelo proximo caractere. Dessa forma, repeticoes podem ser representadas de maneira mais economica conforme o dicionario cresce.
+
+O desempenho depende das caracteristicas da entrada. Textos com palavras e estruturas repetidas tendem a apresentar melhores resultados. Em arquivos pequenos, o cabecalho e a codificacao das tuplas podem ocupar espaco proporcionalmente maior. Em dados pouco previsiveis, a reducao de tamanho pode ser limitada ou ate negativa.
+
+A implementacao desenvolvida para o trabalho utiliza uma trie para armazenar as sequencias durante a compactacao. Cada no representa uma entrada do dicionario, e as arestas registram os caracteres que permitem avancar para sequencias maiores. Para reduzir o consumo de memoria, cada no mantem somente os filhos efetivamente existentes.
+
+Durante os testes, e importante comparar o arquivo original com o arquivo recuperado apos a descompactacao. A verificacao deve ser feita byte a byte para confirmar que nenhuma informacao foi alterada. Alem disso, os tamanhos dos arquivos original e compactado devem ser registrados para calcular a taxa de reducao.
