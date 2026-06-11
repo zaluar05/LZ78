@@ -29,7 +29,7 @@ Esta seção detalha os requisitos de tempo (quão rápido as operações são e
 | Operação | Complexidade | Justificativa |
 | ------------- | ------------- | ------------- |
 | *Busca na trie (por nó)*  | *O(k)*  | *Busca linear entre os filhos de cada nó, onde k é o número de filhos*  |
-| *Compressão total*  | *O(n · k)*  | *n bytes de entrada, cada byte faz uma busca linear  |
+| *Compressão total*  | *O(n · k)*  | *n bytes de entrada, cada byte faz uma busca linear*  |
 | *Escrita de varint*  | *O(1)*  | *No máximo 5 bytes por tupla*  |
 
 Na prática, k tende a ser pequeno (máximo 256), então se comporta quase como O(n).
