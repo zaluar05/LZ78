@@ -28,26 +28,26 @@ Esta seção detalha os requisitos de tempo (quão rápido as operações são e
 #### Compressão
 | Operação | Complexidade | Justificativa |
 | ------------- | ------------- | ------------- |
-| *Busca na trie (por nó)*  | *O(k)*  | *Busca linear entre os filhos de cada nó, onde k é o número de filhos*  |
-| *Compressão total*  | *O(n · k)*  | *n bytes de entrada, cada byte faz uma busca linear*  |
-| *Escrita de varint*  | *O(1)*  | *No máximo 5 bytes por tupla*  |
+| **Busca na trie (por nó)**  | *O(k)*  | Busca linear entre os filhos de cada nó, onde k é o número de filhos  |
+| **Compressão total**  | *O(n · k)*  | n bytes de entrada, cada byte faz uma busca linear  |
+| **Escrita de varint**  | *O(1)*  | No máximo 5 bytes por tupla  |
 
 Na prática, k tende a ser pequeno (máximo 256), então se comporta quase como O(n).
 
 #### Descompressão
 | Operação | Complexidade | Justificativa |
 | ------------- | ------------- | ------------- |
-| *Leitura de varint*  | *O(1)*  | *No máximo 5 iterações*  |
-| *Reconstrução de sequência*  | *O(L)*  | *L é o comprimento da sequência, percorre prefixos até chegar na raiz*  |
-| *Descompressão total*  | *O(m * L)*  | *m tuplas, cada uma reconstrói uma sequência*  |
+| **Leitura de varint**  | *O(1)*  | No máximo 5 iterações  |
+| **Reconstrução de sequência**  | *O(L)*  | L é o comprimento da sequência, percorre prefixos até chegar na raiz  |
+| **Descompressão total**  | *O(m * L)*  | m tuplas, cada uma reconstrói uma sequência  |
 
 ### Complexidade de Espaço (Space Complexity)
 
 | Estrutura | Complexidade | Justificativa |
 | ------------- | ------------- | ------------- |
-| *Trie (compressão)*  | *O(n)*  | *Cada byte do arquivo pode gerar no máximo um novo nó*  |
-| *Dicionário (descompressão)*  | *O(m)*  | *Um **EntradaDicionario** por tupla lida*  |
-| *Buffer de reconstrução*  | *O(L)*  | *Tamanho da maior sequência reconstruída*  |
+| **Trie (compressão)**  | *O(n)*  | Cada byte do arquivo pode gerar no máximo um novo nó  |
+| **Dicionário (descompressão)**  | *O(m)*  | Um **EntradaDicionario** por tupla lida  |
+| **Buffer de reconstrução**  | *O(L)*  | Tamanho da maior sequência reconstruída  |
 
 ### Resultados
 | Arquivo  | Original | Compactado | Redução |
@@ -58,7 +58,11 @@ Na prática, k tende a ser pequeno (máximo 256), então se comporta quase como 
 | **Maior** | *31.888.890 B*  | *4.096.067 B*  | *87.16%*  |
 
 ## 4. Exemplo de Uso
-
+### Compilação
+```
+make
+```
+### Execução
 ```
 ./lz78 -c arquivo_a_ser_compactado.txt arquivo_destino
 ./lz78 -d arquivo_a_ser_descompactado arquivo_destino.txt
