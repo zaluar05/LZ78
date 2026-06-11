@@ -4,9 +4,9 @@
 
 Este projeto é uma implementação do algoritmo de compressão LZ78, desenvolvido em linguagem C.
 
-O algoritmo LZ78 aqui implementado apresenta alguns pontos bastante interessantes como o uso de uma arvore de prefixos (trie) e o conceito de variable-lengh-int
+O algoritmo LZ78 aqui implementado apresenta alguns pontos bastante interessantes como o uso de uma arvore de prefixos (trie) e o conceito de variable-length int
 
-Uma maneira lógica listar os passos na hora compressão é:
+Uma maneira lógica de listar os passos na hora da compressão é:
 - entrada → [trie: busca] → tuplas (varint + byte) → arquivo
 
 passos da descompressão:
